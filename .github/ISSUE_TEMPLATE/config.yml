@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Internal project question
+    url: https://github.com/orgs/AvoQx-Plus/discussions/categories/questions
+    about: Ask internal questions in the private organization Discussions area.
+  - name: VerifiAI planning board
+    url: https://github.com/orgs/AvoQx-Plus/projects/1
+    about: Review ownership, priority, status, deadlines, and workload.

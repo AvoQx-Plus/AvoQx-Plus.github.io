@@ -1,0 +1,97 @@
+name: Website bug
+description: Report a reproducible public portfolio defect or accessibility problem.
+title: "[Website Bug] "
+labels:
+  - "type:bug"
+  - "track:website"
+projects:
+  - "AvoQx-Plus/1"
+body:
+  - type: checkboxes
+    id: duplicate-check
+    attributes:
+      label: Existing issue check
+      options:
+        - label: I searched the open and closed issues for this defect.
+          required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      placeholder: |
+        1. Visit...
+        2. Select...
+        3. Observe...
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Affected public URL
+      placeholder: https://avoqx-plus.github.io/...
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Browser, device, and assistive technology
+      description: Include versions and viewport size where relevant.
+    validations:
+      required: true
+  - type: dropdown
+    id: owner
+    attributes:
+      label: Primary owner
+      options:
+        - Ahesh
+        - Januda
+        - Damsith
+        - Ashen
+        - Sasmitha
+        - Pasindu
+        - Dilukshan
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - P0 Critical
+        - P1 Important
+        - P2 Optional
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: Define the fix, regression check, and accessibility expectation.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence of completion
+      description: Specify the Pull Request, screenshots, test results, and deployment preview required.
+    validations:
+      required: true
+  - type: checkboxes
+    id: publication-safety
+    attributes:
+      label: Publication-safety check
+      options:
+        - label: Screenshots and reproduction details contain no internal, private, or confidential information.
+          required: true

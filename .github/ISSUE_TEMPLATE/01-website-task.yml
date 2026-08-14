@@ -1,0 +1,99 @@
+name: Website task
+description: Plan a bounded public portfolio content, design, accessibility, or implementation task.
+title: "[Website] "
+labels:
+  - "type:task"
+  - "track:website"
+projects:
+  - "AvoQx-Plus/1"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This repository is public. Include only approved public information,
+        sanitized screenshots, synthetic examples, and published metrics.
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: State the visitor-facing outcome this task must achieve.
+    validations:
+      required: true
+  - type: dropdown
+    id: owner
+    attributes:
+      label: Primary owner
+      options:
+        - Ahesh
+        - Januda
+        - Damsith
+        - Ashen
+        - Sasmitha
+        - Pasindu
+        - Dilukshan
+    validations:
+      required: true
+  - type: textarea
+    id: expected-output
+    attributes:
+      label: Expected output
+      description: List pages, components, content, tests, or public assets required.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: Include responsive, accessibility, content-review, and browser requirements where applicable.
+      placeholder: |
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+    validations:
+      required: true
+  - type: dropdown
+    id: effort
+    attributes:
+      label: Time budget
+      options:
+        - 1h
+        - 2h
+        - 3h
+        - 5h
+    validations:
+      required: true
+  - type: dropdown
+    id: week
+    attributes:
+      label: Delivery week
+      options:
+        - Week 1
+        - Week 2
+        - Week 3
+        - Week 4
+        - Week 5
+        - Week 6
+        - Week 7
+        - Week 8
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: Link content approval, design, data, or prerequisite Issues; otherwise write "None."
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence of completion
+      description: Specify the Pull Request, screenshots, checks, deployment preview, or public URL required.
+    validations:
+      required: true
+  - type: checkboxes
+    id: publication-safety
+    attributes:
+      label: Publication-safety check
+      options:
+        - label: The task will not publish internal messages, private Project data, auditor identity, real documents, dataset paths, API keys, or private repository content.
+          required: true
