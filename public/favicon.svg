@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="AvoQx Plus">
+  <rect width="64" height="64" rx="16" fill="#07110f"/>
+  <path d="M15 45 28 16h8l13 29h-9l-2.6-6.3H26.2L23.7 45H15Zm14-13h5.8L32 24.6 29 32Z" fill="#b9ee57"/>
+  <path d="M48 11v8m-4-4h8" stroke="#4edbc5" stroke-width="3" stroke-linecap="round"/>
+</svg>

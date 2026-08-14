@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'Page not found — AvoQx Plus';
+const description = 'The requested AvoQx Plus page could not be found.';
+---
+
+<BaseLayout {title} {description} noindex={true}>
+  <main id="main-content" class="not-found">
+    <a class="brand" href="/" aria-label="AvoQx Plus home">
+      <img src="/avoqx-logo.jpg" alt="" width="48" height="48" />
+      <span class="brand-wordmark"><strong>AvoQx</strong><span>Plus</span></span>
+    </a>
+    <div>
+      <p class="eyebrow"><span></span> Signal not found</p>
+      <h1>404</h1>
+      <p>This route is outside the current system map.</p>
+      <a class="button button-primary" href="/">Return to the portfolio</a>
+    </div>
+  </main>
+</BaseLayout>
